@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelpActivity">
+
+    <View
+        android:id="@+id/refund_items_view"
+        android:layout_width="0dp"
+        android:layout_height="76dp"
+        android:background="@color/green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </View>
+
+    <TextView
+        android:id="@+id/HELP"
+        style="@style/MainText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Помощь"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/help_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Главная"
+        android:textColor="#CC000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/refund_items_view" />
+
+    <TextView
+        android:id="@+id/help_zakaz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="19dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Заказ"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/help_main"
+        app:layout_constraintTop_toBottomOf="@+id/help_main" />
+
+    <TextView
+        android:id="@+id/help_zakaz1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Статус заказа"
+        android:textColor="@color/blue"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/help_zakaz"
+        app:layout_constraintTop_toBottomOf="@+id/help_zakaz" />
+
+    <TextView
+        android:id="@+id/help_zakaz2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Изменить заказ или данные"
+        android:textColor="@color/blue"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/help_zakaz1"
+        app:layout_constraintTop_toBottomOf="@+id/help_zakaz1" />
+
+    <TextView
+        android:id="@+id/help_zakaz3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Предзаказ"
+        android:textColor="@color/blue"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/help_zakaz2"
+        app:layout_constraintTop_toBottomOf="@+id/help_zakaz2" />
+
+    <TextView
+        android:id="@+id/help_zakaz4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Чеки и документы"
+        android:textColor="@color/blue"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/help_zakaz3"
+        app:layout_constraintTop_toBottomOf="@+id/help_zakaz3" />
+
+    <TextView
+        android:id="@+id/help_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Оплата заказа"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/help_zakaz"
+        app:layout_constraintTop_toBottomOf="@+id/help_zakaz4" />
+
+    <TextView
+        android:id="@+id/help_pay1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Способы оплаты"
+        android:textColor="@color/blue"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/help_zakaz4"
+        app:layout_constraintTop_toBottomOf="@+id/help_pay" />
+
+    <TextView
+        android:id="@+id/help_pay2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Ошибка при оплате"
+        android:textColor="@color/blue"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/help_pay1"
+        app:layout_constraintTop_toBottomOf="@+id/help_pay1" />
+
+    <TextView
+        android:id="@+id/help_items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Товары"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/help_pay"
+        app:layout_constraintTop_toBottomOf="@+id/help_pay2" />
+
+    <TextView
+        android:id="@+id/help_items1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Характеристика и наличие"
+        android:textColor="@color/blue"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/help_items"
+        app:layout_constraintTop_toBottomOf="@+id/help_items" />
+
+    <TextView
+        android:id="@+id/help_items2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Избранные товары"
+        android:textColor="@color/blue"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/help_items1"
+        app:layout_constraintTop_toBottomOf="@+id/help_items1" />
+
+    <TextView
+        android:id="@+id/help_items3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Вопросы о товаре"
+        android:textColor="@color/blue"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/help_items2"
+        app:layout_constraintTop_toBottomOf="@+id/help_items2" />
+
+    <TextView
+        android:id="@+id/help_items4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Подарочные сертификаты VitaMarket"
+        android:textColor="@color/blue"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/help_items3"
+        app:layout_constraintTop_toBottomOf="@+id/help_items3" />
+
+    <TextView
+        android:id="@+id/help_delivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Доставка"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/help_items"
+        app:layout_constraintTop_toBottomOf="@+id/help_items4" />
+
+    <TextView
+        android:id="@+id/help_delivery1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Способы доставки"
+        android:textColor="@color/blue"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/help_items4"
+        app:layout_constraintTop_toBottomOf="@+id/help_delivery" />
+
+
+    <TextView
+        android:id="@+id/help_delivery2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Стоимость доставки"
+        android:textColor="@color/blue"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/help_delivery1"
+        app:layout_constraintTop_toBottomOf="@+id/help_delivery1" />
+
+    <TextView
+        android:id="@+id/help_refund"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Возврат товара и денег"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/help_delivery"
+        app:layout_constraintTop_toBottomOf="@+id/help_delivery2" />
+
+    <TextView
+        android:id="@+id/help_refund1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Как вернуть товар"
+        android:textColor="@color/blue"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/help_delivery2"
+        app:layout_constraintTop_toBottomOf="@+id/help_refund" />
+
+    <TextView
+        android:id="@+id/help_refund2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Условия и сроки возврата"
+        android:textColor="@color/blue"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/help_refund1"
+        app:layout_constraintTop_toBottomOf="@+id/help_refund1" />
+
+    <TextView
+        android:id="@+id/help_refund3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Когда и как вернуться деньги"
+        android:textColor="@color/blue"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/help_refund2"
+        app:layout_constraintTop_toBottomOf="@+id/help_refund2" />
+
+    <TextView
+        android:id="@+id/help_refund4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Открыть спор"
+        android:textColor="@color/blue"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/help_refund3"
+        app:layout_constraintTop_toBottomOf="@+id/help_refund3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

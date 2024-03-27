@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white2"
+    android:textAlignment="textStart"
+    tools:context=".SettingsNotificationsActivity">
+
+    <View
+
+        android:id="@+id/settings_notifications_view"
+        android:layout_width="0dp"
+        android:layout_height="76dp"
+        android:background="@color/green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </View>
+
+    <TextView
+        android:id="@+id/settings_notification"
+        style="@style/MainText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Настройки уведомлений"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/settings_notifications_view">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/settings_notifications_status"
+        android:layout_width="117dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="221dp"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:text="Статус заказа"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/settings_notifications_view" />
+
+    <Button
+        android:id="@+id/settings_notifications_bt1"
+        style="@style/Кнопки"
+        android:layout_marginTop="16dp"
+        android:text="Включить пуш-уведомления"
+        app:layout_constraintStart_toStartOf="@+id/settings_notifications_status"
+        app:layout_constraintTop_toBottomOf="@+id/settings_notifications_status" />
+
+    <Button
+        android:id="@+id/settings_notifications_bt2"
+        style="@style/Кнопки"
+        android:layout_marginTop="7dp"
+        android:text="Телефон"
+        app:layout_constraintEnd_toEndOf="@+id/settings_notifications_bt1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/settings_notifications_bt1"
+        app:layout_constraintTop_toBottomOf="@+id/settings_notifications_bt1" />
+
+    <Button
+        android:id="@+id/settings_notifications_bt3"
+        style="@style/Кнопки"
+        android:text="Электроная почта"
+        app:layout_constraintEnd_toEndOf="@+id/settings_notifications_bt2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/settings_notifications_bt2"
+        app:layout_constraintTop_toBottomOf="@+id/settings_notifications_bt2" />
+
+    <TextView
+        android:id="@+id/settings_notifications_recomend"
+        android:layout_width="263dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="52dp"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:text="Персональные рекомендации"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/settings_notifications_bt3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/settings_notifications_bt3"
+        app:layout_constraintTop_toBottomOf="@+id/settings_notifications_bt3" />
+
+    <Button
+        android:id="@+id/settings_notifications_bt4"
+        android:layout_width="316dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Включить пуш-уведомления"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="@+id/settings_notifications_recomend"
+        app:layout_constraintTop_toBottomOf="@+id/settings_notifications_recomend" />
+
+    <Button
+        android:id="@+id/settings_notifications_bt5"
+        android:layout_width="316dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="7dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Электронная почта"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/settings_notifications_bt4"
+        app:layout_constraintHorizontal_bias="0.500001"
+        app:layout_constraintStart_toStartOf="@+id/settings_notifications_bt4"
+        app:layout_constraintTop_toBottomOf="@+id/settings_notifications_bt4" />
+
+    <Switch
+        android:id="@+id/settings_notifications_switch"
+        android:layout_width="316dp"
+        android:layout_height="50dp"
+        android:text=" "
+        app:layout_constraintEnd_toEndOf="@+id/settings_notifications_bt4"
+        app:layout_constraintStart_toStartOf="@+id/settings_notifications_bt4"
+        app:layout_constraintTop_toTopOf="@+id/settings_notifications_bt5" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="9dp"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_notifications_bt1"
+        app:layout_constraintEnd_toEndOf="@+id/settings_notifications_bt1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/settings_notifications_bt1"
+        app:layout_constraintTop_toTopOf="@+id/settings_notifications_bt1"
+        app:srcCompat="@drawable/arrow_point_to_right_3" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="9dp"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_notifications_bt2"
+        app:layout_constraintEnd_toEndOf="@+id/settings_notifications_bt2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/settings_notifications_bt2"
+        app:layout_constraintTop_toTopOf="@+id/settings_notifications_bt2"
+        app:srcCompat="@drawable/arrow_point_to_right_3" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="9dp"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_notifications_bt3"
+        app:layout_constraintEnd_toEndOf="@+id/settings_notifications_bt3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/settings_notifications_bt3"
+        app:layout_constraintTop_toTopOf="@+id/settings_notifications_bt3"
+        app:srcCompat="@drawable/arrow_point_to_right_3" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="9dp"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_notifications_bt4"
+        app:layout_constraintEnd_toEndOf="@+id/settings_notifications_bt4"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/settings_notifications_bt4"
+        app:layout_constraintTop_toTopOf="@+id/settings_notifications_bt4"
+        app:srcCompat="@drawable/arrow_point_to_right_3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

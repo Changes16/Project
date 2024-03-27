@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white2"
+    tools:context=".CabinetActivity">
+
+    <View
+        android:id="@+id/refund_items_view"
+        android:layout_width="0dp"
+        android:layout_height="76dp"
+        android:background="@color/green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </View>
+
+    <TextView
+        android:id="@+id/CabinetMain"
+        style="@style/MainText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/raleway_bold"
+        android:text="@string/cabinet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/of_app"
+        style="@style/Кнопки"
+        android:text="@string/about_app1"
+        app:layout_constraintEnd_toEndOf="@+id/settings_app"
+        app:layout_constraintStart_toStartOf="@+id/settings_app"
+        app:layout_constraintTop_toBottomOf="@+id/settings_app" />
+
+    <Button
+        android:id="@+id/settings_app"
+        style="@style/Кнопки"
+        android:layout_marginTop="15dp"
+        android:text="Настройки"
+        app:layout_constraintEnd_toEndOf="@+id/help_app"
+        app:layout_constraintStart_toStartOf="@+id/help_app"
+        app:layout_constraintTop_toBottomOf="@+id/help_app" />
+
+    <Button
+        android:id="@+id/expectation_app"
+        style="@style/Кнопки"
+        android:contentDescription="@string/about_app1"
+        android:text="Лист ожидания"
+        app:layout_constraintEnd_toEndOf="@+id/payment_app"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/payment_app"
+        app:layout_constraintTop_toBottomOf="@+id/payment_app" />
+
+    <Button
+        android:id="@+id/delivery_app"
+        style="@style/Кнопки"
+        android:layout_marginTop="266dp"
+        android:text="Адрес доставки"
+        app:layout_constraintEnd_toEndOf="@+id/go_to_reviews"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/go_to_favorites"
+        app:layout_constraintTop_toBottomOf="@+id/refund_items_view" />
+
+    <Button
+        android:id="@+id/payment_app"
+        style="@style/Кнопки"
+        android:text="Способы оплаты"
+        android:textAlignment="textStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/delivery_app"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/delivery_app"
+        app:layout_constraintTop_toBottomOf="@+id/delivery_app"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/help_app"
+        style="@style/Кнопки"
+        android:text="Помощь"
+        app:layout_constraintEnd_toEndOf="@+id/refund_app"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/refund_app"
+        app:layout_constraintTop_toBottomOf="@+id/refund_app" />
+
+    <Button
+        android:id="@+id/refund_app"
+        style="@style/Кнопки"
+        android:text="Возврат товаров"
+        app:layout_constraintEnd_toEndOf="@+id/expectation_app"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/expectation_app"
+        app:layout_constraintTop_toBottomOf="@+id/expectation_app" />
+
+    <Button
+        android:id="@+id/go_to_favorites"
+        android:layout_width="153dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="265dp"
+        android:layout_marginEnd="184dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/inter_light"
+        android:text="@string/cabinet1"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/go_to_reviews"
+        android:layout_width="153dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="265dp"
+        android:layout_marginEnd="49dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/inter_light"
+        android:text="@string/cabinet2"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/go_to_favorites"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="22dp"
+        android:contentDescription="@string/about_app1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/refund_items_view"
+        app:srcCompat="@drawable/ic_buy" />
+
+    <ImageView
+        android:id="@+id/ic_green_heart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/go_to_favorites"
+        app:layout_constraintEnd_toEndOf="@+id/go_to_favorites"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toStartOf="@+id/go_to_favorites"
+        app:layout_constraintTop_toTopOf="@+id/go_to_favorites"
+        app:layout_constraintVertical_bias="0.2"
+        app:srcCompat="@drawable/ic_green_heart" />
+
+    <ImageView
+        android:id="@+id/ic_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/go_to_reviews"
+        app:layout_constraintEnd_toEndOf="@+id/go_to_reviews"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toStartOf="@+id/go_to_reviews"
+        app:layout_constraintTop_toTopOf="@+id/go_to_reviews"
+        app:layout_constraintVertical_bias="0.2"
+        app:srcCompat="@drawable/ic_group" />
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/cabinet3"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/go_to_favorites"
+        app:layout_constraintStart_toStartOf="@+id/ic_green_heart"
+        app:layout_constraintTop_toTopOf="@+id/go_to_favorites"
+        app:layout_constraintVertical_bias="0.84" />
+
+    <TextView
+        android:id="@+id/textView50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/cabinet4"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/go_to_reviews"
+        app:layout_constraintStart_toStartOf="@+id/ic_group"
+        app:layout_constraintTop_toTopOf="@+id/go_to_reviews"
+        app:layout_constraintVertical_bias="0.84" />
+
+    <ImageView
+        android:id="@+id/arrow1_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="9dp"
+        android:contentDescription="@string/about_app1"
+        app:layout_constraintBottom_toBottomOf="@+id/delivery_app"
+        app:layout_constraintEnd_toEndOf="@+id/delivery_app"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/delivery_app"
+        app:layout_constraintTop_toTopOf="@+id/delivery_app"
+        app:srcCompat="@drawable/arrow_point_to_right_3" />
+
+    <ImageView
+        android:id="@+id/arrow2_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="9dp"
+        android:contentDescription="@string/about_app1"
+        app:layout_constraintBottom_toTopOf="@+id/expectation_app"
+        app:layout_constraintEnd_toEndOf="@+id/payment_app"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/payment_app"
+        app:layout_constraintTop_toBottomOf="@+id/delivery_app"
+        app:srcCompat="@drawable/arrow_point_to_right_3" />
+
+    <ImageView
+        android:id="@+id/arrow3_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="9dp"
+        android:contentDescription="@string/about_app1"
+        app:layout_constraintBottom_toBottomOf="@+id/expectation_app"
+        app:layout_constraintEnd_toEndOf="@+id/expectation_app"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/expectation_app"
+        app:layout_constraintTop_toTopOf="@+id/expectation_app"
+        app:srcCompat="@drawable/arrow_point_to_right_3" />
+
+    <ImageView
+        android:id="@+id/arrow4_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="9dp"
+        android:contentDescription="@string/about_app1"
+        app:layout_constraintBottom_toBottomOf="@+id/help_app"
+        app:layout_constraintEnd_toEndOf="@+id/help_app"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/help_app"
+        app:layout_constraintTop_toTopOf="@+id/help_app"
+        app:srcCompat="@drawable/arrow_point_to_right_3" />
+
+    <ImageView
+        android:id="@+id/arrow5_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="9dp"
+        android:contentDescription="@string/about_app1"
+        app:layout_constraintBottom_toTopOf="@+id/help_app"
+        app:layout_constraintEnd_toEndOf="@+id/refund_app"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/refund_app"
+        app:layout_constraintTop_toBottomOf="@+id/expectation_app"
+        app:srcCompat="@drawable/arrow_point_to_right_3" />
+
+    <ImageView
+        android:id="@+id/arrow6_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="9dp"
+        android:contentDescription="@string/about_app1"
+        app:layout_constraintBottom_toBottomOf="@+id/of_app"
+        app:layout_constraintEnd_toEndOf="@+id/of_app"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/of_app"
+        app:layout_constraintTop_toTopOf="@+id/of_app"
+        app:srcCompat="@drawable/arrow_point_to_right_3" />
+
+    <ImageView
+        android:id="@+id/arrow7_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="9dp"
+        android:contentDescription="@string/about_app1"
+        app:layout_constraintBottom_toTopOf="@+id/of_app"
+        app:layout_constraintEnd_toEndOf="@+id/settings_app"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/settings_app"
+        app:layout_constraintTop_toTopOf="@+id/settings_app"
+        app:srcCompat="@drawable/arrow_point_to_right_3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

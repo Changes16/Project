@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeliveryActivity">
+
+    <View
+        android:id="@+id/address_delivery_view"
+        android:layout_width="0dp"
+        android:layout_height="76dp"
+        android:background="@color/green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></View>
+
+    <TextView
+        android:id="@+id/deliveryMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Адрес доставки"
+        style="@style/MainText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/del_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/del_2"
+        app:layout_constraintStart_toStartOf="@+id/del_2"
+        app:layout_constraintTop_toBottomOf="@+id/del_2"
+        app:srcCompat="@drawable/delivery_address1" />
+
+    <ImageView
+        android:id="@+id/del_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/address_delivery_view"
+        app:srcCompat="@drawable/delivery_address" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

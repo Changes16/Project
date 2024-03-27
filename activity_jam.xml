@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF"
+    tools:context=".Jam">
+
+    <ImageView
+        android:id="@+id/imMain"
+        android:layout_width="wrap_content"
+        android:layout_height="335dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/golubika" />
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="21dp"
+        app:layout_constraintStart_toStartOf="@+id/imMain"
+        app:layout_constraintTop_toTopOf="@+id/imMain"
+        app:srcCompat="@drawable/ic_back__1" />
+
+    <ImageView
+        android:id="@+id/favourites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/imMain"
+        app:layout_constraintTop_toTopOf="@+id/imMain"
+        app:srcCompat="@drawable/ic_bookmark" />
+
+    <TextView
+        android:id="@+id/name_item"
+        android:layout_width="225dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginBottom="118dp"
+        android:fontFamily="@font/raleway_semibold"
+        android:text="Варенье из голубики"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imMain"
+        app:layout_constraintEnd_toEndOf="@+id/imMain"
+        app:layout_constraintStart_toStartOf="@+id/imMain" />
+
+    <TextView
+        android:id="@+id/address_item"
+        android:layout_width="241dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginEnd="58dp"
+        android:fontFamily="@font/raleway"
+        android:text="С. Эмисс , ул. Күннүк Урастырова, 45"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/imMain"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toStartOf="@+id/imMain"
+        app:layout_constraintTop_toBottomOf="@+id/name_item" />
+
+    <ImageView
+        android:id="@+id/xz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="273dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imMain"
+        app:layout_constraintEnd_toEndOf="@+id/imMain"
+        app:layout_constraintHorizontal_bias="0.274"
+        app:layout_constraintStart_toStartOf="@+id/imMain"
+        app:layout_constraintTop_toBottomOf="@+id/address_item"
+        app:srcCompat="@drawable/ic_a1" />
+
+    <TextView
+        android:id="@+id/weight_item"
+        android:layout_width="40dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="47dp"
+        android:fontFamily="@font/inter"
+        android:text="300 г"
+        app:layout_constraintStart_toEndOf="@+id/xz"
+        app:layout_constraintTop_toBottomOf="@+id/address_item" />
+
+    <TextView
+        android:id="@+id/name_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="349dp"
+        android:layout_marginEnd="140dp"
+        android:fontFamily="@font/raleway_medium"
+        android:text="Елена Захарова"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/seller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/raleway"
+        android:text="Продавец"
+        android:textColor="#858585"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/name_user"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/name_user"
+        app:layout_constraintTop_toBottomOf="@+id/name_user" />
+
+    <ImageView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="270dp"
+        android:layout_marginTop="353dp"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_phone" />
+
+    <ImageView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="353dp"
+        app:layout_constraintStart_toEndOf="@+id/phone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_message" />
+
+    <ImageView
+        android:id="@+id/user_image"
+        android:layout_width="38dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="347dp"
+        android:layout_marginEnd="300dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <TextView
+        android:id="@+id/DS"
+        style="@style/Описание"
+        android:text="Описание"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seller" />
+
+    <TextView
+        android:id="@+id/TextDS"
+        style="@style/ТекстОписания"
+        android:layout_height="54dp"
+        android:fontFamily="@font/raleway"
+        android:text="Превосходный витаминный, полезный десерт, которым можно разнообразить другую выпечку, блины или просто по есть с хлебом..."
+        android:textAlignment="viewStart"
+        android:textColor="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DS" />
+
+    <TextView
+        android:id="@+id/show_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="65dp"
+        android:fontFamily="@font/raleway_medium"
+        android:text="Показать дальше"
+        android:textColor="#3EB631"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/TextDS"
+        app:layout_constraintEnd_toEndOf="@+id/TextDS"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/TextDS" />
+
+    <View
+        android:id="@+id/price_background"
+        android:layout_width="wrap_content"
+        android:layout_height="88dp"
+        android:background="@color/green3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/price_main"
+        style="@style/Цена"
+        android:fontFamily="@font/raleway"
+        android:text="Цена"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/price_background" />
+
+    <TextView
+        android:id="@+id/price"
+        style="@style/Price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        app:layout_constraintStart_toStartOf="@+id/price_main"
+        app:layout_constraintTop_toTopOf="@+id/price_background" />
+
+    <Button
+        android:id="@+id/in_basket"
+        style="@style/Вкорзину"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="В корзину"
+        app:cornerRadius="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/price_background"
+        app:layout_constraintEnd_toEndOf="@+id/price_background"
+        app:layout_constraintStart_toStartOf="@+id/price_background"
+        app:layout_constraintTop_toTopOf="@+id/price_background" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/price_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextDS" >
+
+        <ImageView
+            android:id="@+id/imageView32"
+            android:layout_width="67dp"
+            android:layout_height="67dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="271dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gallery"
+            app:srcCompat="@drawable/ic_launcher_foreground" />
+
+        <ImageView
+            android:id="@+id/imageView36"
+            android:layout_width="67dp"
+            android:layout_height="67dp"
+            android:layout_marginStart="105dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="188dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gallery"
+            app:srcCompat="@drawable/ic_launcher_foreground" />
+
+        <ImageView
+            android:id="@+id/imageView37"
+            android:layout_width="67dp"
+            android:layout_height="67dp"
+            android:layout_marginStart="188dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="105dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gallery"
+            app:srcCompat="@drawable/ic_launcher_foreground" />
+
+        <ImageView
+            android:id="@+id/imageView38"
+            android:layout_width="67dp"
+            android:layout_height="67dp"
+            android:layout_marginStart="271dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="22dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gallery"
+            app:srcCompat="@drawable/ic_launcher_foreground" />
+
+        <TextView
+            android:id="@+id/gallery"
+            style="@style/Галерея"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Галерея"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
