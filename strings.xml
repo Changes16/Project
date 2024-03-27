@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Project IT</string>
+    <string name="about_app1">О приложении</string>
+    <string name="about_app2">Версия приложения</string>
+    <string name="about_app4">1.0</string>
+    <string name="about_app5">Версия OC</string>
+    <string name="about_app6">Android 14</string>
+    <string name="about_app7">Модель устройства</string>
+    <string name="about_app8">Pixel 7 Pro (GP4BC)</string>
+    <string name="about_app9">Регион</string>
+    <string name="about_app10">Россия</string>
+    <string name="about_app11">© 2023 – 2024</string>
+    <string name="about_app12">ООО «ВитаМаркет»</string>
+    <string name="about_app13">Лицензионное соглашение</string>
+    <string name="about_app14">Условия обработки персональных данных</string>
+
+    <string name="auth">Введите электронную почту</string>
+    <string name="auth1">Мы отправим код на электронную почту.</string>
+    <string name="auth2">sample@email.com</string>
+    <string name="auth3">Электронная почта</string>
+    <string name="auth4">Войти</string>
+    <string name="auth5">Нажимая на кнопку, я соглашаюсь с условиями  </string>
+    <string name="auth6">Правил пользования торговой площадки </string>
+    <string name="auth7">Войти по номеру телефона</string>
+
+    <string name="cabinet">Личный кабинет</string>
+    <string name="cabinet1">Избранное</string>
+    <string name="cabinet2">Отзывы</string>
+    <string name="cabinet3">11 товаров</string>
+    <string name="cabinet4">Нет отзывов</string>
+
+    <string name="title_activity_main_window">MainWindow</string>
+    <string name="title_home">Меню</string>
+    <string name="title_dashboard">Каталог</string>
+    <string name="title_notifications">Корзина</string>
+    <string name="title_cabinet">Кабинет</string>
+</resources>

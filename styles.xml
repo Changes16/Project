@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MainText" parent = "TextAppearance.AppCompat">
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/raleway_bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:layout_marginStart">23dp</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:textColorLink">@color/black</item>
+        <item name="android:textColorHighlight">@color/black</item>
+    </style>
+
+    <style name="Описание" parent = "TextAppearance.AppCompat">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_marginStart">22dp</item>
+        <item name="android:layout_marginTop">32dp</item>
+        <item name="android:layout_marginEnd">261dp</item>
+        <item name="android:fontFamily">@font/raleway_medium</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:textColorLink">@color/black</item>
+        <item name="android:textColorHighlight">@color/black</item>
+    </style>
+
+    <style name="ТекстОписания" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">319dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">22dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginEnd">22dp</item>
+        <item name="android:fontFamily">@font/raleway</item>
+        <item name="android:lineHeight">21dp</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:textColorLink">@color/black</item>
+        <item name="android:textColorHighlight">@color/black</item>
+    </style>
+    
+    <style name="Price" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_width">113dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_marginTop">51dp</item>
+        <item name="android:fontFamily">@font/raleway_medium</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:textColorLink">@color/black</item>
+        <item name="android:textColorHighlight">@color/black</item>
+    </style>
+
+    <style name="Цена" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">22dp</item>
+        <item name="android:layout_marginEnd">309dp</item>
+        <item name="android:layout_marginBottom">45dp</item>
+        <item name="android:fontFamily">@font/raleway_medium</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:textColorLink">@color/black</item>
+        <item name="android:textColorHighlight">@color/black</item>
+    </style>
+
+    <style name="Галерея" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_width">69dp</item>
+        <item name="android:layout_height">18dp</item>
+        <item name="android:layout_marginStart">22dp</item>
+        <item name="android:layout_marginTop">13dp</item>
+        <item name="android:layout_marginEnd">272dp</item>
+        <item name="android:fontFamily">@font/raleway_medium</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:textColorLink">@color/black</item>
+        <item name="android:textColorHighlight">@color/black</item>
+    </style>
+
+    <style name="Вкорзину" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_width">127dp</item>
+        <item name="android:layout_height">47dp</item>
+        <item name="android:layout_marginStart">212dp</item>
+        <item name="android:layout_marginTop">28dp</item>
+        <item name="android:layout_marginEnd">22dp</item>
+        <item name="android:layout_marginBottom">13dp</item>
+        <item name="android:backgroundTint">@color/green2</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/raleway_semibold</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:textColorLink">@color/black</item>
+        <item name="android:textColorHighlight">@color/black</item>
+    </style>
+
+    <style name="Кнопки" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_width">315dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:textColorLink">@color/black</item>
+        <item name="android:textColorHighlight">@color/black</item>
+    </style>
+
+</resources>
